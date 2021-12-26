@@ -1,0 +1,50 @@
+print("Quiz Rijk van den Berg")
+Gebruikersnaam = input("Gebruikersnaam? : ")
+print("hey",Gebruikersnaam, "\nDe quiz begint, voor de goed beantwoordde vragen krijg je een punt. Vul alleen het getal van je antwoord in.")
+
+playing = True
+while playing == True:
+    points = 0
+
+    print("Wat is 5*3")
+    Antwoord_1 = input("Vul hier in: ")
+    if Antwoord_1 == "15":
+        print("Goed")
+        points +=1
+    else:
+        print("Fout")
+
+
+    print("Wat is 7*8")
+    Antwoord_2 = input("Vul hier in: ")
+    if Antwoord_2 == "56":
+        print("Goed")
+        points +=1
+    else:
+        print("Fout")
+
+
+    print("Wat is 135-48")
+    Antwoord_3 = input("Vul hier in: ")
+    if Antwoord_3 == "87":
+        print("Goed")
+        points +=1
+    else:
+        print("Fout")
+
+
+    print("Wat is 13*15")
+    Antwoord_3 = input("Vul hier in: ")
+    if Antwoord_3 == "195":
+        print("Goed")
+        points +=1
+    else:
+        print("Fout")
+
+
+    Laatste_vraag = input("Toets 1 als je opnieuw wil beginnen")   
+    if Laatste_vraag == "1":
+        playing = True
+    else:
+        break
+print("Toets afgelopen, hier zijn je punten:",points)
